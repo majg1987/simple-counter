@@ -2,7 +2,14 @@ import React from "react";
 import Contador from "./Contador";
 
 //create your first component
-const Home = ({ segundos, minutos, horas, dias }) => {
+const Home = ({
+	segundos,
+	minutos,
+	horas,
+	dias,
+	resetearContador,
+	paraContador,
+}) => {
 	return (
 		<>
 			<Contador
@@ -10,6 +17,8 @@ const Home = ({ segundos, minutos, horas, dias }) => {
 				minutos={minutos}
 				horas={horas}
 				dias={dias}
+				resetearContador={resetearContador}
+				paraContador={paraContador}
 			/>
 		</>
 	);

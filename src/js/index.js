@@ -13,7 +13,18 @@ let minutos = 0;
 let horas = 0;
 let dias = 0;
 
-setInterval(() => {
+const resetearContador = () => {
+	segundos = -1;
+	minutos = 0;
+	horas = 0;
+	dias = 0;
+};
+
+const paraContador = () => {
+	clearInterval(incrementar);
+};
+
+const incrementar = setInterval(() => {
 	segundos++;
 	if (segundos === 59) {
 		minutos++;
@@ -35,10 +46,9 @@ setInterval(() => {
 			minutos={minutos}
 			horas={horas}
 			dias={dias}
+			resetearContador={resetearContador}
+			paraContador={paraContador}
 		/>,
 		document.querySelector("#app")
 	);
 }, 1000);
-
-//render your react application
-// ReactDOM.render(<Home />, document.querySelector("#app"));

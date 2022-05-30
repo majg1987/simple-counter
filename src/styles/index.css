@@ -1,8 +1,15 @@
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/luz-abstracta-fondo-pared-ladrillo-blanco-negro_39730-1481.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .row {
-    margin-top: 2rem;
+    margin-top: 15rem;
     height: 250px;
 }
 
 .ventana {
     border-radius: .5rem;
+    box-shadow: 20px 20px 50px 15px rgb(39, 34, 34);
 }
