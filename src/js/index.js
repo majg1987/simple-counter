@@ -26,11 +26,11 @@ const paraContador = () => {
 
 const incrementar = setInterval(() => {
 	segundos++;
-	if (segundos === 59) {
+	if (segundos === 60) {
 		minutos++;
 		segundos = 0;
 	}
-	if (minutos === 59) {
+	if (minutos === 60) {
 		horas++;
 		minutos = 0;
 	}
